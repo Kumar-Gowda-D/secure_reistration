@@ -1,0 +1,80 @@
+:root {
+  --blood-red: #b30000;
+  --blood-dark: #7a0000;
+  --soft-bg: #FFFFFF;
+  --white: #ffffff;
+}
+
+.admin-page {
+  height: 100vh;
+  background: var(--soft-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-card {
+  width: 90%;
+  max-width: 420px;
+  background: var(--white);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.admin-title {
+  color: var(--blood-dark);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.admin-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+.admin-input:focus {
+  border-color: var(--blood-red);
+}
+
+.admin-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: var(--blood-red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.admin-btn:hover {
+  background: var(--blood-dark);
+}
+
+.admin-back {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.admin-back:hover {
+  background: #333;
+}

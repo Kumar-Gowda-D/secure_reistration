@@ -1,0 +1,146 @@
+:root {
+  --blood-red: #b30000;
+  --blood-dark: #820000;
+  --blood-light: #ffe2e2;
+  --success-green: #059669;
+  --warning-orange: #d97706;
+  --pending-dark: #374151;
+}
+
+/* PAGE */
+.tb-dashboard {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.tb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tb-title {
+  color: var(--blood-dark);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.tb-btn {
+  padding: 10px 16px;
+  background: var(--blood-red);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.tb-btn:hover {
+  background: var(--blood-dark);
+}
+
+.tb-refresh {
+  background: #4b5563;
+}
+.tb-refresh:hover {
+  background: #374151;
+}
+
+.tb-logout {
+  background: var(--blood-red);
+  margin-left: 8px;
+}
+
+/* TABLE */
+.tb-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tb-table th {
+  background: var(--blood-light);
+  padding: 12px;
+  text-align: left;
+}
+
+.tb-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* STATUS BADGES */
+.status-badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status-done {
+  background: #d1fae5;
+  color: var(--success-green);
+}
+
+.status-not-done {
+  background: #fef3c7;
+  color: var(--warning-orange);
+}
+
+.status-pending {
+  background: #e5e7eb;
+  color: var(--pending-dark);
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-done {
+  background: var(--success-green);
+  color: white;
+  margin-right: 6px;
+}
+.btn-done:hover {
+  background: #047857;
+}
+
+.btn-not-done {
+  background: var(--warning-orange);
+  color: white;
+}
+.btn-not-done:hover {
+  background: #b45309;
+}
+
+/* NO DATA / LOADING */
+.no-data,
+.loading-txt {
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+}
+
+/* MOBILE UI */
+@media (max-width: 600px) {
+  .tb-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tb-table {
+    font-size: 14px;
+  }
+
+  .tb-title {
+    font-size: 22px;
+  }
+}

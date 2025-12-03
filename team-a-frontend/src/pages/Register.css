@@ -1,0 +1,128 @@
+.reg-page {
+  min-height: 100vh;
+  background: #FFFFFF;
+  padding-top: 40px;
+  position: relative;
+  overflow-x: hidden !important; /* 🔥 FIX mobile horizontal overflow */
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--blood-red);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.logout-btn:hover {
+  background: var(--blood-dark);
+}
+
+.reg-card {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+
+  overflow: visible !important;  /* 🔥 IMPORTANT FIX */
+}
+
+.reg-title {
+  color: var(--blood-dark);
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.input-box {
+  width: 100%;
+  max-width: 100%; /* 🔥 Prevents overflow */
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+.input-box:focus {
+  border-color: var(--blood-red);
+}
+
+/* 🔥 SPECIAL FIX for DROPDOWN */
+select.input-box {
+  appearance: none;           /* remove weird mobile drop styling */
+  -webkit-appearance: none;
+  background-color: #fff;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.err {
+  color: #b71c1c;
+  font-size: 14px;
+  margin: 4px 0 0 5px;
+  text-align: left;
+}
+
+/* POPUP */
+.popup {
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.popup.success {
+  background: #d4edda;
+  color: #155724;
+}
+.popup.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.popup-icon {
+  font-size: 40px;
+}
+.popup-msg {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.popup-btn {
+  background: var(--blood-red);
+  margin-top: 18px;
+}
+.popup-btn:hover {
+  background: var(--blood-dark);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  margin-top: 20px;
+}
+
+/* MOBILE FIXES */
+@media (max-width: 480px) {
+  .reg-card {
+    padding: 22px;
+  }
+  .reg-title {
+    font-size: 22px;
+  }
+
+  /* 🔥 KEY FIX for SELECT OVERFLOW */
+  select.input-box {
+    font-size: 16px;
+    transform: translateZ(0);   /* solves overflow on Android devices */
+  }
+}

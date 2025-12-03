@@ -1,0 +1,85 @@
+    /* .analytics-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    }
+
+    .analytics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .analytics-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #7a0000;
+    }
+
+    .back-btn {
+    background: #7a0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    .back-btn:hover {
+    background: #b30000;
+    }
+
+    .analytics-card {
+    margin-top: 25px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    } */
+
+.analytics-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-title {
+  font-size: 28px;
+  color: #7a0000;
+  font-weight: 700;
+}
+
+.back-btn {
+  padding: 10px 14px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.back-btn:hover {
+  background: #7a0000;
+}
+
+.donor-count {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #7a0000;
+}
+
+.donor-count span {
+  color: #b30000;
+}
+
+.analytics-card {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}

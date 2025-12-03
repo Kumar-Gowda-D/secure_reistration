@@ -1,0 +1,103 @@
+/* ===========================================
+   HOME PAGE — BLOOD DONATION THEME
+   =========================================== */
+
+/* Beautiful gradient background */
+.home-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+
+/* Card box */
+.home-card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  transition: transform 0.2s ease;
+}
+
+/* Slight hover animation */
+.home-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.home-title {
+  margin: 0;
+  color: var(--blood-dark);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Subtitle */
+.home-subtitle {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button wrapper */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Button base style */
+.home-btn {
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: white;
+}
+
+/* Team A button */
+.btn-teamA {
+  background: var(--blood-red);
+}
+.btn-teamA:hover {
+  background: var(--blood-dark);
+}
+
+/* Team B button */
+.btn-teamB {
+  background: var(--blood-red);
+}
+.btn-teamB:hover {
+  background: var(--blood-dark);
+}
+
+/* Admin button */
+.btn-admin {
+  background: #424242;
+}
+.btn-admin:hover {
+  background: #1c1c1c;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 480px) {
+  .home-card {
+    padding: 28px;
+  }
+  .home-title {
+    font-size: 26px;
+  }
+  .home-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

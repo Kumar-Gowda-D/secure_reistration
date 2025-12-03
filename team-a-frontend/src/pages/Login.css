@@ -1,0 +1,87 @@
+/* MAIN PAGE */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+/* CARD BOX */
+.login-card {
+  background: var(--white);
+  padding: 35px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* TITLE */
+.login-title {
+  margin-bottom: 20px;
+  color: var(--blood-dark);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* INPUT FIELD */
+.input-box {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: var(--blood-red);
+  box-shadow: 0 0 5px rgba(211, 47, 47, 0.4);
+}
+
+/* ERROR BOX */
+.error-msg {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  background: var(--blood-red);
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background: var(--blood-dark);
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background: #555;
+  margin-top: 10px;
+}
+
+.back-btn:hover {
+  background: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px;
+  }
+  .login-title {
+    font-size: 22px;
+  }
+  .input-box {
+    font-size: 15px;
+  }
+}

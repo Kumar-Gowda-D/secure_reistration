@@ -1,0 +1,110 @@
+:root {
+  --blood-red: #D32F2F;
+  --blood-dark: #B71C1C;
+  --soft-bg: #FFFFFF;
+  --white: #ffffff;
+}
+
+/* FULL PAGE */
+.tb-page {
+  height: 100vh;
+  background: var(--soft-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CARD */
+.tb-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--white);
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* TITLE */
+.tb-title {
+  color: var(--blood-dark);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* ERROR BOX */
+.tb-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* INPUT FIELDS */
+.tb-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+}
+
+.tb-input:focus {
+  border-color: var(--blood-red);
+  box-shadow: 0 0 5px rgba(211,47,47,0.4);
+}
+
+/* LOGIN BUTTON */
+.tb-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  font-size: 18px;
+  background: var(--blood-red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tb-btn:hover {
+  background: var(--blood-dark);
+}
+
+/* BACK BUTTON */
+.tb-back {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  background: #424242;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tb-back:hover {
+  background: #222;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .tb-card {
+    padding: 25px;
+  }
+  .tb-title {
+    font-size: 22px;
+  }
+  .tb-input {
+    font-size: 15px;
+  }
+}

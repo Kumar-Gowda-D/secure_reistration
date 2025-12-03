@@ -1,0 +1,167 @@
+/* ================================
+   MAIN PAGE CONTAINER
+   ================================ */
+.admin-page {
+  max-width: 1100px;
+  margin: 20px auto;         /* ⭐ Clean top spacing */
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* ================================
+   TOP BAR (Title + Buttons)
+   ================================ */
+.admin-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 15px;
+}
+
+.admin-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #820000;
+  margin: 0;
+}
+
+
+/* ================================
+   TOP RIGHT BUTTONS
+   ================================ */
+.admin-analytics-btn {
+  padding: 8px 16px;
+  background: #4b5563; /* grey */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 12px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.admin-analytics-btn:hover {
+  background: #374151;
+}
+
+.admin-logout-btn {
+  padding: 8px 16px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.admin-logout-btn:hover {
+  background: #820000;
+}
+
+
+/* ================================
+   FILTER BUTTONS
+   ================================ */
+.filter-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-btn {
+  padding: 10px 16px;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #820000;
+}
+
+
+/* ================================
+   SEARCH BAR
+   ================================ */
+.admin-search {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+}
+
+
+/* ================================
+   TABLE WRAPPER
+   ================================ */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* TABLE HEADER */
+.admin-table th {
+  background: #ffe2e2;
+  padding: 12px;
+  font-weight: 600;
+  text-align: left;
+  color: #820000;
+}
+
+/* TABLE CELLS */
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* HOVER */
+.admin-table tr:hover {
+  background: #fff5f5;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media (max-width: 700px) {
+
+  .admin-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .admin-top-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .admin-table {
+    font-size: 14px;
+  }
+}
