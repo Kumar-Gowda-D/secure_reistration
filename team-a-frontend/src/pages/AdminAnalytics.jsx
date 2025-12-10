@@ -95,33 +95,37 @@ export default function AdminAnalytics() {
   // FETCH DATA FUNCTION
   // =============================
   const fetchData = async () => {
-    try {
-      const res = await api.get("/admin/all");
-      const entries = res.data.entries;
+  try {
+    const res = await api.get("/admin/all");
+    const entries = res.data.entries;
 
-      setTotalDonors(entries.length);
+    // ⭐ Filter only users who are "done"
+    const doneEntries = entries.filter(item => item.status === "done");
 
-      const countMap = {};
-      bloodGroups.forEach(bg => (countMap[bg] = 0));
+    // Total donors = only done
+    setTotalDonors(doneEntries.length);
 
-      entries.forEach(item => {
-        if (countMap[item.bloodGroup] !== undefined) {
-          countMap[item.bloodGroup]++;
-        }
-      });
+    const countMap = {};
+    bloodGroups.forEach(bg => (countMap[bg] = 0));
 
-      const formatted = bloodGroups.map(bg => ({
-        group: bg,
-        count: countMap[bg]
-      }));
+    // ⭐ Count only done people in each blood group
+    doneEntries.forEach(item => {
+      if (countMap[item.bloodGroup] !== undefined) {
+        countMap[item.bloodGroup]++;
+      }
+    });
 
-      setChartData(formatted);
-    } catch (err) {
-      console.log(err);
-      alert("Failed to load analytics");
-    }
-  };
+    const formatted = bloodGroups.map(bg => ({
+      group: bg,
+      count: countMap[bg]
+    }));
 
+    setChartData(formatted);
+  } catch (err) {
+    console.log(err);
+    alert("Failed to load analytics");
+  }
+};
   // =============================
   // USE EFFECT WITH AUTO REFRESH (5 min)
   // =============================
