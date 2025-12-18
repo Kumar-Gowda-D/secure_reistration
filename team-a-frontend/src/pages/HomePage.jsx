@@ -81,7 +81,7 @@ export default function HomePage() {
     <div className="home-main">
       <div className="home-card">
 
-        <h1 className="home-title">NSS Blood Donation Portal</h1>
+        <h1 className="home-title">Registration Web Page</h1>
         <p className="home-subtitle">Select your workspace</p>
 
         <div className="home-buttons">
